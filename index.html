@@ -40,11 +40,9 @@
                     <p class="text-sm text-gray-400"><span id="job-count">8</span> jobs</p>
                 </div>
                 <div class="menu__section">
-                    <button class="filter-btn active btn btn-sm rounded-full border px-4" data-filter="all">All</button>
-                    <button class="filter-btn btn btn-sm rounded-full border border-gray-300 px-4 text-gray-500"
-                        data-filter="interview">Interview</button>
-                    <button class="filter-btn btn btn-sm rounded-full border border-gray-300 px-4 text-gray-500"
-                        data-filter="rejected">Rejected</button>
+                    <button onclick="togole('all')"  class="filter-btn active btn btn-sm rounded-full border px-4 bg-blue-400 text-white" id="all">All</button>
+                    <button onclick="togole('interview')"  class="filter-btn btn btn-sm rounded-full border border-gray-300 px-4 text-gray-500" id="interview">Interview</button>
+                    <button onclick="togole('reg')"  class="filter-btn btn btn-sm rounded-full border border-gray-300 px-4 text-gray-500" id="reg">Rejected</button>
                 </div>
             </div>
         </section>
@@ -52,20 +50,21 @@
         <!-- card section -->
         <section>
             <div class="container mx-auto px-4">
-                <div class="flex flex-col gap-4 mt-2">
+                <div id="card__container" class="flex flex-col gap-4 mt-2">
 
                     <!-- card 1 -->
-                    <div class="card bg-base-100 w-full shadow-sm">
+                    <div class="card bg-base-100 w-full shadow-sm ">
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">Mobile First Corp</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img  class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>React Native Developer</p>
                             <p>Remote • Full-time • $130,000 - $175,000</p>
                             <p>Build cross-platform mobile applications using React Native. Work on products used by
                                 millions of
                                 users worldwide.</p>
+                            <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
@@ -78,7 +77,7 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">WebFlow Agency</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>Web Designer & Developer</p>
                             <p>Los Angeles, CA • Part-time • $80,000 - $120,000</p>
@@ -86,8 +85,9 @@
                                 experience
                                 with
                                 modern web design trends.</p>
+                                <div class="neew__button"></div>
                             <div class="card-actions justify-start">
-                                <button class="btn text-green-400 border-green-400">interview</button>
+                                <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">DataViz Solutions</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>Data Visualization Specialist</p>
                             <p>Boston, MA • Full-time • $125,000 - $165,000</p>
@@ -106,6 +106,7 @@
                                 and
                                 strong
                                 analytical thinking.</p>
+                                <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
@@ -118,13 +119,14 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">CloudFirst Inc</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>Backend Developer</p>
                             <p>Seattle, WA • Full-time • $140,000 - $190,000</p>
                             <p>Design and maintain scalable backend systems using Python and AWS. Work with modern
                                 DevOps
                                 practices and cloud infrastructure.</p>
+                                <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
@@ -137,7 +139,7 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">Innovation Labs</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>UI/UX Engineer</p>
                             <p>Austin, TX • Full-time • $110,000 - $150,000</p>
@@ -145,6 +147,7 @@
                                 design
                                 skills
                                 and frontend development expertise required.</p>
+                                <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
@@ -157,13 +160,14 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">Mobile First Corp</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>JavaScript Developer</p>
                             <p>New York, NY • Full-time • $130,000 - $170,000</p>
                             <p>Build enterprise applications with JavaScript and modern frameworks. We offer
                                 competitive
                                 compensation, health insurance, and professional development opportunities.</p>
+                                <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
@@ -176,7 +180,7 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">StartupXYZ</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>Full Stack Engineer</p>
                             <p>Remote • Full-time • $120,000 - $160,000</p>
@@ -184,6 +188,7 @@
                                 and
                                 React
                                 required. Great benefits and equity package included.</p>
+                                <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
@@ -196,15 +201,12 @@
                         <div class="card-body">
                             <div class="flex justify-between items-start">
                                 <h2 class="card-title">TechCorp Industries</h2>
-                                <img class="h-fit w-[13px] cursor-pointer" src="Trash.png" alt="">
+                                <img class="h-fit w-[13px] cursor-pointer delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card delete__card" src="Trash.png" alt="">
                             </div>
                             <p>Senior Frontend Developer</p>
                             <p>San Francisco, CA • Full-time • $130,000 - $175,000</p>
-                            <p>We are looking for an experienced Frontend Developer to build scalable web
-                                applications
-                                using
-                                React and TypeScript. You will work with a talented team on cutting-edge projects.
-                            </p>
+                            <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
+                            <div class="neew__button"></div>
                             <div class="card-actions justify-start">
                                 <button class="btn text-green-400 border-green-400 interview">interview</button>
                                 <button class="btn text-[#EF4444] border-[#EF4444] Rejected">Rejected</button>
