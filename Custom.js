@@ -8,7 +8,6 @@ const stat_interview = getId('stat-interview');
 const stat_rejected = getId('stat-rejected');
 const job_count = getId('job-count');
 const all__section = getId('all__section');
-
 const allBtn = getId('all')
 const interviewBtn = getId('interview')
 const regBtn = getId('reg')

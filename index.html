@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         @import "tailwindcss";
+        
         body {
             background-color: #eceef1;
         }
-    </style>
+        </style>
     <title>Job-Tracker</title>
 </head>
 
@@ -239,14 +241,12 @@
             <!-- interview section -->
             <section id="interview__section" class="hidden">
                 <div id="interview__filtered" class="container mx-auto px-4 flex flex-col gap-4 mt-2">
-                    <div class="hero bg-white max-h-64">
+                    <div class="hero bg-base-100 border border-gray-100 rounded-lg py-20">
                         <div class="hero-content text-center">
-                            <div class="max-w-md text-center">
-                                <img src="Vector.png" class="inline" alt="">
-                                <h1 class="text-3xl font-bold">No jobs available</h1>
-                                <p class="py-6">
-                                    Check back soon for new job opportunities
-                                </p>
+                            <div class="max-w-md flex flex-col items-center">
+                                <img src="Vector.png" class="w-24 h-24 mb-4 object-contain" alt="No jobs icon">
+                                <h1 class="text-3xl font-bold">No jobs available </h1>
+                                <p class="py-4 text-gray-500 text-lg">Check back soon for new job opportunities</p>
                             </div>
                         </div>
                     </div>
@@ -255,21 +255,18 @@
 
             <!-- rejected section -->
             <section id="rejected__section" class="hidden">
-                <div id="rejected__filtered" class="container mx-auto px-4 flex flex-col gap-4 mt-2">
-                    <div class="hero bg-white max-h-64">
+                <div id="rejected__filtered" class="container mx-auto px-4 mt-10 flex flex-col gap-4">
+                    <div class="hero bg-base-100 border border-gray-100 rounded-lg py-20">
                         <div class="hero-content text-center">
-                            <div class="max-w-md text-center">
-                                <img src="Vector.png" class="inline" alt="">
-                                <h1 class="text-3xl font-bold">No jobs available</h1>
-                                <p class="py-6">
-                                    Check back soon for new job opportunities
-                                </p>
+                            <div class="max-w-md flex flex-col items-center">
+                                <img src="Vector.png" class="w-24 h-24 mb-4 object-contain" alt="No jobs icon">
+                                <h1 class="text-3xl font-bold">No jobs available </h1>
+                                <p class="py-4 text-gray-500 text-lg">Check back soon for new job opportunities</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </section>
 
     </main>
